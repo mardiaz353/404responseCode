@@ -1,0 +1,107 @@
+<!Doctype html>
+<html>
+
+<head>
+    <style type="text/css">
+
+
+        body { background-color: #ffe6ee;}
+        .btn-group button {
+            background-color: #ff6699;<!--pink background-->
+        border: 1px solid pink;<!--pink border-->
+        color: white<!--white text-->
+        padding 10px 24px;<!--add a bit of padding around it-->
+                              @{
+
+                                  ViewData["Title"] = "Where Should <en>You</en> Apply <strong> highlighter </strong>";
+                              }
+    </style>
+</head>
+<!--Declare your stuff to pretty up the buttons first-->
+<h1> Link Your Photo </h1>
+
+<p>Upload a picture of yourself below.</p> <br>For the best results, please use a photo in good lighting.</br>
+<br>You <strong> must </strong> use a photo of yourself looking straight and directly into the camera. </br>
+<br>Not using a face that looks straight into the camera will not produce optimal results.</br>
+
+<p>
+    Finally, please use a picture with a neutral face.
+</p><br>
+
+<form asp-controller="Home" asp-action="Index" method="post">
+
+    <div>
+        <label>Link</label>
+        <input type="text" name="link">
+    </div><br/>
+    <div>
+        <input type="submit" value="Submit" class="btn btn-default" />
+    </div>
+
+</form>
+
+</html>
+
+<!--	
+</head>
+<body>
+this is normal text
+<p>this is a paragraph</p>
+</body>
+<style>
+
+@{
+
+    ViewData["Title"] = "Where Should You Apply Your Hi-Lie-ht";
+
+}
+
+<h2/>
+<h2>This is my header rule test</h2>
+
+<body>
+<a href="http://google.com">This is going to be a link</a>
+
+</body>
+
+<p><!--syntax for creating a paragraph-->
+
+<!--<em>Please</em> type the URL of the photo you want to use to see where you should apply <strong> highlighter </strong>!<!--make bold or italisize-->
+
+<!--</p><br><!--go to the next line-->
+
+<!--
+
+<form asp-controller="Home" asp-action="Index" method="post">
+
+    <div>
+
+        <label>Link</label>
+
+        <input type="text" name="link">
+
+    </div><br/>
+
+
+
+    <div>
+
+        <input type="submit" value="Submit" class="btn btn-default" />
+
+    </div>
+
+</form>
+
+</style>
+<body>
+
+<h1>Button Group</h1>
+
+  <button>Upload Photo</button><!--Name of the buttons-->
+<!--<button>Go</button>
+
+</div>
+
+</body>
+</html>
+<div class="btn-group">-->
